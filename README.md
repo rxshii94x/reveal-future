@@ -86,22 +86,41 @@ The experience is designed to feel closer to a digital museum, cinematic install
 ## 📁 Project Structure
 
 ```text
-public/
-├── frames/
-├── assets/
-└── media/
+reveal_future/
+│
+├── public/
+│   └── frames/
+│       ├── ezgif-frame-001.jpg
+│       ├── ezgif-frame-002.jpg
+│       └── ...
+│
+├── src/
+│   │
+│   ├── components/
+│   │   ├── ChromeGuardian.tsx
+│   │   ├── ChromeGuardianScreen.tsx
+│   │   └── ChromeGuardianSequence.tsx
+│   │
+│   ├── hooks/
+│   │   └── Custom React Hooks
+│   │
+│   ├── utils/
+│   │   └── Helper Functions
+│   │
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
+│
+├── .env.example
+├── .gitignore
+├── index.html
+├── metadata.json
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
 
-src/
-├── components/
-├── sections/
-├── hooks/
-├── utils/
-├── App.tsx
-└── main.tsx
-
-package.json
-vite.config.ts
-tsconfig.json
 ```
 
 ---
