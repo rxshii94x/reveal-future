@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cinzel", Georgia, serif;
+  --font-sans: "Inter", sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+}
+
+/* Hide scrollbars for museum-level immersion */
+html, body {
+  background-color: #000000;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Brand signature watermark — discreet museum archive mark */
+.brand-watermark {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-family: "Cinzel", Georgia, serif;
+  font-size: 9px;
+  font-weight: 300;
+  letter-spacing: 0.4em;
+  color: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  z-index: 9997;
+  user-select: none;
+}
+
+/* Brand signature pulse — shared timing for brand moments */
+@keyframes brandSignaturePulse {
+  0%, 100% { opacity: 0; }
+  8% { opacity: 1; }
+  25% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+/* Brand echo between phases — appears during scroll transitions */
+@keyframes brandEchoFade {
+  0% { opacity: 0; transform: scale(0.97); filter: blur(4px); }
+  30% { opacity: 0.04; transform: scale(1); filter: blur(0px); }
+  70% { opacity: 0.04; transform: scale(1); filter: blur(0px); }
+  100% { opacity: 0; transform: scale(1.01); filter: blur(2px); }
+}
+
+/* Brand-tinted selection for subconscious color association */
+::selection {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+
+::-moz-selection {
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
