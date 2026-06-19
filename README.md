@@ -50,8 +50,6 @@ The experience is designed to feel closer to a digital museum, cinematic install
 
 • Scroll-driven storytelling
 
-• Museum-style interface design
-
 • Interactive chapter navigation
 
 • Cinematic loading sequence
@@ -60,9 +58,6 @@ The experience is designed to feel closer to a digital museum, cinematic install
 
 • Luxury motion design
 
-• Signature archive ending sequence
-
-• Responsive experience
 
 ---
 
